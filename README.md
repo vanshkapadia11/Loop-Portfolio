@@ -23,6 +23,20 @@ A modern, responsive portfolio website built using **React.js** and **Tailwind C
 - Clean grid layout using Tailwind
 - Fully responsive and accessible
 
+  For Brave browser users:
+
+  You can add a small message:
+  "If dark mode doesn't work, try turning off Brave Shields or use Chrome."
+  (Just to save your future users confusion.)
+
+  Keep the theme toggle clean using localStorage + useEffect → You already nailed this.
+
+  Optional polish:
+
+  Avoid flicker on first load (we can add a .no-transition class initially and remove it with JS).
+
+  Animate background/text change smoothly (you’re already using Tailwind transitions well).
+
 ## 📂 Project Structure
 
 ```bash

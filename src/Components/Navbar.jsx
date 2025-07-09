@@ -37,7 +37,7 @@ const Navbar = () => {
               <li className="link active md:block hidden">ABOUT</li>
               <li className="link md:block hidden">BLOG</li>
               <li className="link md:block hidden">PROJECTS</li>
-              <li className="link md:block hidden">dfdfdfd</li>
+              <li className="link md:block hidden">RESUME</li>
               <li
                 className="link material-symbols-rounded"
                 // onClick={() => setIsDark(!isDark)}
