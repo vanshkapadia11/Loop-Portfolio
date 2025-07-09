@@ -4,7 +4,7 @@ A modern, responsive portfolio website built using **React.js** and **Tailwind C
 
 ## 📸 Preview
 
-![Portfolio Preview](./screenshot.png)
+![Portfolio Preview](./Layout-Idea-White.webp)
 
 ## 🛠️ Tech Stack
 
