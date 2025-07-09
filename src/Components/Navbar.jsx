@@ -2,24 +2,23 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
-  // const toggleDarkMode = () => {
-  //   setIsDarkMode(!isDarkMode);
-  //   document.documentElement.classList.toggle("dark");
-  // };
-  const [isDark, setIsDark] = useState(() => {
+  const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.theme === "dark";
   });
 
   useEffect(() => {
-    if (isDark) {
+    if (isDarkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [isDark]);
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
+  };
 
   return (
     <>
@@ -35,13 +34,13 @@ const Navbar = () => {
               <li className="link active md:block hidden">ABOUT</li>
               <li className="link md:block hidden">BLOG</li>
               <li className="link md:block hidden">PROJECTS</li>
-              <li className="link md:block hidden">RESUME</li>
+              <li className="link md:block hidden">ojojo</li>
               <li
                 className="link material-symbols-rounded"
-                // onClick={toggleDarkMode}
-                onClick={() => setIsDark(!isDark)}
+                // onClick={() => setIsDark(!isDark)}
+                onClick={toggleDarkMode}
               >
-                {isDark ? "brightness_7" : "bedtime"}
+                {isDarkMode ? "brightness_7" : "bedtime"}
               </li>
             </ul>
           </nav>
