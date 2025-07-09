@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.theme === "dark";
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "light") return false;
+    return true; // Default is dark
   });
 
   useEffect(() => {
