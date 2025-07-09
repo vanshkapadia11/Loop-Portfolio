@@ -2,11 +2,24 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark");
-  };
+  // const [isDarkMode, setIsDarkMode] = useState(false);
+  // const toggleDarkMode = () => {
+  //   setIsDarkMode(!isDarkMode);
+  //   document.documentElement.classList.toggle("dark");
+  // };
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.theme === "dark";
+  });
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDark]);
 
   return (
     <>
@@ -25,9 +38,10 @@ const Navbar = () => {
               <li className="link md:block hidden">RESUME</li>
               <li
                 className="link material-symbols-rounded"
-                onClick={toggleDarkMode}
+                // onClick={toggleDarkMode}
+                onClick={() => setIsDark(!isDark)}
               >
-                {isDarkMode ? "brightness_7" : "bedtime"}
+                {isDark ? "brightness_7" : "bedtime"}
               </li>
             </ul>
           </nav>
