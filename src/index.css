@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 html {
-  @apply bg-[#171717] text-white font-sans transition-colors duration-300 ease-in-out;
+  @apply bg-[#171717] text-white font-sans transition-colors duration-300 ease-in-out font-sans antialiased text-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html.dark {
