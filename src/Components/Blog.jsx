@@ -5,7 +5,7 @@ const Blog = () => {
     <>
       <section className="container1 hero uppercase md:mt-32 mt-32">
         <div
-          className="md:grid md:grid-cols-[2fr,1fr] md:gap-8 md:p-20 flex flex-col items-center justify-center"
+          className="lg:grid lg:grid-cols-[2fr,1fr] lg:gap-8 lg:p-20 flex flex-col items-center justify-center"
           data-aos="fade-up"
         >
           <div className="w-full max-h-full flex flex-col items-start justify-start">
@@ -108,26 +108,28 @@ const Blog = () => {
             </div>
           </div>
           <div className="w-full max-h-full uppercase flex flex-col items-center justify-center space-y-8 static mt-10 md:mt-0">
-            <div
-              className="flex justify-center items-center flex-col p-10 ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg"
-              data-aos="fade-up"
-            >
-              <span
-                className="material-symbols-rounded text-white dark:text-zinc-800 heading-1 m-7"
-                style={{ fontSize: "90px" }}
+            <div className="hidden lg:visible">
+              <div
+                className="flex justify-center items-center flex-col p-10 ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg"
+                data-aos="fade-up"
               >
-                lightbulb
-              </span>
-              <h2 className="text-3xl font-semibold text-gray-200 heading-1 w-11/12 dark:text-black">
-                HAVE SOMETHING COOL IN MIND ??
-              </h2>
-              <p className="text-gray-400 mt-4 text-sm font-medium m-4 tracking-wider dark:dark-heading-2 heading-2 dark:text-zinc-800">
-                this can be start of something great!!!
-              </p>
-              <button className="p-4 ring-1 ring-inset dark:dark-heading-2 ring-[#242424] dark:text-zinc-800 rounded-full shadow-lg flex items-center gap-4 uppercase mt-6 text-gray-200 font-semibold heading-2">
-                Let's Talk!!
-                <span className="material-symbols-rounded">mail</span>
-              </button>
+                <span
+                  className="material-symbols-rounded text-white dark:text-zinc-800 heading-1 m-7"
+                  style={{ fontSize: "90px" }}
+                >
+                  lightbulb
+                </span>
+                <h2 className="text-3xl font-semibold text-gray-200 heading-1 w-11/12 dark:text-black">
+                  HAVE SOMETHING COOL IN MIND ??
+                </h2>
+                <p className="text-gray-400 mt-4 text-sm font-medium m-4 tracking-wider dark:dark-heading-2 heading-2 dark:text-zinc-800">
+                  this can be start of something great!!!
+                </p>
+                <button className="p-4 ring-1 ring-inset dark:dark-heading-2 ring-[#242424] dark:text-zinc-800 rounded-full shadow-lg flex items-center gap-4 uppercase mt-6 text-gray-200 font-semibold heading-2">
+                  Let's Talk!!
+                  <span className="material-symbols-rounded">mail</span>
+                </button>
+              </div>
             </div>
             <div className="" data-aos="fade-up">
               <p className="text-gray-400 mt-4 text-sm font-medium m-4 tracking-wider heading-2">

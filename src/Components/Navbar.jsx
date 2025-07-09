@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <section className="container ">
-        <div className="flex h-32 justify-between items-center py-4 px-6">
+        <div className="flex h-32 justify-between items-center lg:py-4 lg:px-6">
           <div className="logo">
             <span className="material-symbols-rounded font-semibold dark:text-black text-white text-[30px]">
               360

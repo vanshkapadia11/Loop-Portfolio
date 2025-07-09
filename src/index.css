@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  @apply bg-[#171717] dark:bg-[#ffffff] font-sans dark:text-zinc-800 transition-colors duration-300 ease-in-out;
+  @apply bg-[#171717] dark:bg-[#ffffff] font-sans dark:text-zinc-800 transition-colors duration-300 ease-in-out max-h-full max-w-full;
 }
 .link {
   @apply text-gray-200 dark:text-zinc-800 dark:hover:text-black hover:text-white cursor-pointer transition-colors text-base font-semibold;

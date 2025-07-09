@@ -7,7 +7,7 @@ const About = () => {
         data-aos="fade-up"
         className="container1 hero uppercase md:mt-32 mt-32 "
       >
-        <div className="flex flex-col items-center justify-center p-16 ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg">
+        <div className="flex flex-col items-center justify-center lg:p-16 py-20 sm:p-8 p-4 md:ring-1 md:ring-inset md:ring-[#242424] md:rounded-lg md:shadow-lg">
           <div className="heading">
             <h2 className="text-3xl font-semibold text-white heading-2 dark:text-black">
               what can i offer for your organization!!
@@ -17,8 +17,8 @@ const About = () => {
               startup to Fortune 500 companies. Check what I can do.
             </p>
           </div>
-          <div className="cards grid md:grid-cols-3 gap-8 mt-14 grid-cols-1">
-            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-80 p-8 h-full">
+          <div className="cards grid md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8 mt-14 grid-cols-1">
+            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg lg:w-80 w-full p-8 h-full">
               <div className="flex flex-col justify-start mt-6">
                 <span
                   className="material-symbols-rounded text-white dark:text-black heading-1"
@@ -35,7 +35,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-80 p-8 h-full">
+            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-full lg:w-80 p-8 h-full">
               <div className="flex flex-col justify-start mt-6">
                 <span
                   className="material-symbols-rounded text-white dark:text-black heading-1"
@@ -52,7 +52,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-80 p-8 h-full">
+            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-full lg:w-80 p-8 h-full">
               <div className="flex flex-col justify-start mt-6">
                 <span
                   className="material-symbols-rounded text-white dark:text-black heading-1"
@@ -69,7 +69,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-80 p-8 h-full">
+            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-full lg:w-80 p-8 h-full">
               <div className="flex flex-col justify-start mt-6">
                 <span
                   className="material-symbols-rounded text-white dark:text-black heading-1"
@@ -86,7 +86,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-80 p-8 h-full">
+            <div className="ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg w-full lg:w-80 p-8 h-full">
               <div className="flex flex-col justify-start mt-6">
                 <span
                   className="material-symbols-rounded text-white dark:text-black heading-1"
