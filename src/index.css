@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @apply bg-[#171717] dark:bg-[#ffffff] font-sans dark:text-zinc-800 transition-colors duration-300 ease-in-out;
+}
+.link {
+  @apply text-gray-200 dark:text-zinc-800 dark:hover:text-black hover:text-white cursor-pointer transition-colors text-base font-semibold;
+}
+.link1 {
+  @apply text-gray-200 hover:text-white cursor-pointer transition-colors text-base font-semibold ml-0;
+}
+.container {
+  @apply max-w-full px-6;
+}
+.active {
+  @apply border-b-2 border-gray-400 dark:border-zinc-700 text-white;
+}
+.container.hero {
+  @apply max-w-full md:px-20 px-8;
+}
+.heading-1 {
+  background: -webkit-linear-gradient(180deg, #fafafa, #a1a1a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark .heading-1 {
+  background: linear-gradient(180deg, #000, #5b5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* optional fallback for Firefox */
+}
+.dark .heading-2 {
+  background: linear-gradient(180deg, #000, #5b5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* optional fallback for Firefox */
+}
+.heading-2 {
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container1 {
+  @apply max-w-full px-5;
+}
+.container1.hero {
+  @apply max-w-full md:px-20 px-8;
+}
