@@ -10,16 +10,12 @@ const Navbar = () => {
 
   return (
     <>
-      <section className="container">
-        <div className="flex h-24 justify-between items-center py-4">
+      <section className="container ">
+        <div className="flex h-32 justify-between items-center py-4 px-6">
           <div className="logo">
-            <img
-              src="/images/logo.svg"
-              height={40}
-              width={40}
-              className="text-white dark:text-black"
-              alt=""
-            />
+            <span className="material-symbols-rounded font-semibold dark:text-black text-white text-[30px]">
+              360
+            </span>
           </div>
           <nav className="">
             <ul className="flex md:space-x-6 bg-[#242424] dark:bg-[#f9f9f9] py-4 px-6 rounded-full">

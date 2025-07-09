@@ -3,7 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section className="container1 hero uppercase md:mt-32 mt-32 ">
+      <section
+        data-aos="fade-up"
+        className="container1 hero uppercase md:mt-32 mt-32 "
+      >
         <div className="flex flex-col items-center justify-center p-16 ring-1 ring-inset ring-[#242424] rounded-lg shadow-lg">
           <div className="heading">
             <h2 className="text-3xl font-semibold text-white heading-2 dark:text-black">
